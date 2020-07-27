@@ -88,7 +88,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    width: 38%;
+    width: 105px;
     height: 28px;
 
     text-decoration: none;
@@ -101,6 +101,18 @@
     color: #FFFFFF;
 
     margin: 10px 0px;
+}
+
+.preview-container-link:hover, .main-product-unit-link:hover, .main-addition-about-us-link:hover {
+    background: #C29974;
+}
+
+.preview-container-link:active, .main-product-unit-link:active, .main-addition-about-us-link:active {
+    background: #CFAF91;
+}
+
+.preview-container-link:disabled, .main-product-unit-link:disabled, .main-addition-about-us-link:disabled {
+    background: #C1C1C1;
 }
 
 .preview-container-supplement {
@@ -149,8 +161,9 @@
 }
 
 .main-category-gallery-preview-item {
+    position: relative;
     text-decoration: none;
-    width: 21%;
+    width: 280px;
     height: 270px;
     display: inline-flex;
     flex-direction: column;
@@ -160,11 +173,15 @@
 
 .main-category-gallery-preview-item-img {
     max-height: 270px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .main-category-gallery-preview-item-text {
     position: absolute;
-    top: 90%;
+    top: 50%;
+    transform: translate(0, -50%);
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -186,6 +203,7 @@
 }
 
 .main-category-gallery-pagination-button-left, .main-category-gallery-pagination-button-right {
+    position: relative;
     text-decoration: none;
     width: 37px;
     height: 37px;
@@ -197,18 +215,23 @@
     margin-right: 6px;
 }
 
+.button-left, .button-right {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid #1E0606;
+    border-right: 4px solid #1E0606;
+}
+
 .button-left {
-    background: url("../../images/svg/MainPaginationLeft.svg") no-repeat;
-    width: 8px;
-    height: 12px;
-    margin: auto 20px;
+    transform: rotate(-135deg);
 }
 
 .button-right {
-    background: url("../../images/svg/MainPaginationRight.svg") no-repeat;
-    width: 8px;
-    height: 12px;
-    margin: auto 20px;
+    left: 5px;
+    transform: rotate(45deg);
 }
 
 .main-category-gallery-pagination-text {
@@ -294,7 +317,7 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    width: 13%;
+    width: 95px;
     height: 28px;
     text-decoration: none;
     font-style: normal;
@@ -375,7 +398,7 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    width: 12%;
+    width: 66px;
     height: 28px;
     text-decoration: none;
     font-style: normal;

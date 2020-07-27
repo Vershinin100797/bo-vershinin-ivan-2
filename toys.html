@@ -44,7 +44,7 @@
                 <span class="main-form-item">
                     <label for="range" class="main-form-item-label">Cost</label>
                     <span class="main-form-item-range-block">
-                        <input name="Cost" type="range" id="range" class="main-form-item-range">
+                        <input name="Cost" type="range" id="range" min="0" max="500" class="main-form-item-range" oninput="range()">
                         <span class="main-form-item-range-numbers">
                             <span class="main-form-item-range-min">0</span>
                             <span class="main-form-item-range-max">500</span>
@@ -55,26 +55,26 @@
                     <label class="main-form-item-label">Color</label>
                     <ul class="main-form-item-checkbox-list">
                         <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="Black" type="checkbox" class="main-form-item-list-unit-checkbox">
+                            <input name="Black" type="checkbox" id="Black" class="main-form-item-list-unit-checkbox">
+                            <label for="Black" class="main-form-item-list-unit-label">
                                 Black
                             </label>
                         </li>
                         <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="Blue" type="checkbox" class="main-form-item-list-unit-checkbox">
+                            <input name="Blue" type="checkbox" id="Blue" class="main-form-item-list-unit-checkbox">
+                            <label for="Blue" class="main-form-item-list-unit-label">
                                 Blue
                             </label>
                         </li>
                         <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="Green" type="checkbox" class="main-form-item-list-unit-checkbox">
+                            <input name="Green" type="checkbox" id="Green" class="main-form-item-list-unit-checkbox">
+                            <label for="Green" class="main-form-item-list-unit-label">
                                 Green
                             </label>
                         </li>
                         <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="White" type="checkbox" class="main-form-item-list-unit-checkbox">
+                            <input name="White" type="checkbox" id="White" class="main-form-item-list-unit-checkbox">
+                            <label for="White" class="main-form-item-list-unit-label">
                                 White
                             </label>
                         </li>
@@ -83,15 +83,15 @@
                 <span class="main-form-item">
                     <label class="main-form-item-label">Delivery</label>
                     <ul class="main-form-item-radio-list">
-                        <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="Free-shipping" type="radio" class="main-form-item-list-unit-radio">
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Free-shipping" type="radio" id="Free shipping" class="main-form-item-list-unit-radio">
+                            <label for="Free shipping" class="main-form-item-radio-list-unit-label">
                                 Free shipping
                             </label>
                         </li>
-                        <li class="main-form-item-list-unit">
-                            <label class="main-form-item-list-unit-label">
-                                <input name="Fast-shipping" type="radio" class="main-form-item-list-unit-radio">
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Fast-shipping" type="radio" id="Fast shipping" class="main-form-item-list-unit-radio">
+                            <label for="Fast shipping" class="main-form-item-radio-list-unit-label">
                                 Fast shipping
                             </label>
                         </li>
@@ -101,20 +101,20 @@
                     <label class="main-form-item-label">Amount</label>
                     <ul class="main-form-item-radio-buttons-list">
                         <li class="main-form-item-radio-buttons-unit">
-                            <label class="main-form-item-radio-buttons-unit-label">
-                                <input name="0-5" type="radio" class="main-form-item-radio-buttons-unit-input">
+                            <input name="0-5" type="radio" id="0-5" class="main-form-item-radio-buttons-unit-input">
+                            <label for="0-5" class="main-form-item-radio-buttons-unit-label">
                                 0-5
                             </label>
                         </li>
                         <li class="main-form-item-radio-buttons-unit">
-                            <label class="main-form-item-radio-buttons-unit-label">
-                                <input name="10-20" type="radio" class="main-form-item-radio-buttons-unit-input">
+                            <input name="10-20" type="radio" id="10-20" class="main-form-item-radio-buttons-unit-input">
+                            <label for="10-20" class="main-form-item-radio-buttons-unit-label">
                                 10-20
                             </label>
                         </li>
                         <li class="main-form-item-radio-buttons-unit">
-                            <label class="main-form-item-radio-buttons-unit-label">
-                                <input name="20-50" type="radio" class="main-form-item-radio-buttons-unit-input">
+                            <input name="20-50" type="radio" id="20-50" class="main-form-item-radio-buttons-unit-input">
+                            <label for="20-50" class="main-form-item-radio-buttons-unit-label">
                                 20-50
                             </label>
                         </li>
@@ -247,5 +247,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/range.js"></script>
 </body>
 </html>

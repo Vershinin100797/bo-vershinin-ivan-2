@@ -177,3 +177,15 @@
 .footer-main-block-connect-links-img:hover {
     opacity: 0.5;
 }
+
+.footer-main-block-connect-button:hover {
+     background: #C29974;
+}
+
+.footer-main-block-connect-button:active {
+    background: #CFAF91;
+}
+
+.footer-main-block-connect-button:disabled {
+    background: #C1C1C1;
+}

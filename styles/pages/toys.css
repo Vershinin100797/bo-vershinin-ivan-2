@@ -80,6 +80,7 @@
 }
 
 .main-form {
+    margin-top: 50px;
     background: rgba(125, 151, 218, 0.2);
     height: 254px;
     display: flex;
@@ -111,8 +112,132 @@
     padding: 0px;
 }
 
-.main-form-item-list-unit, .main-form-item-radio-buttons-unit {
+.main-form-item-list-unit, .main-form-item-radio-list-unit {
+    margin-bottom: 10px;
+}
+
+.main-form-item-list-unit, .main-form-item-radio-list-unit, .main-form-item-radio-buttons-unit {
     list-style-type: none;
+}
+
+.main-form-item-radio-buttons-unit input[type=radio] {
+    display: none;
+}
+
+.main-form-item-radio-buttons-unit label {
+    padding: 7px 28px;
+    cursor: pointer;
+    background: #FFFFFF;
+    user-select: none;
+}
+
+.main-form-item-radio-buttons-unit input[type=radio]:checked + label{
+    background: #F3D0DB;
+}
+
+.main-form-item-radio-buttons-unit label:hover {
+    background: #EDDEEB;
+}
+
+.main-form-item-radio-list-unit input[type=radio] {
+    display: none;
+}
+
+.main-form-item-radio-list-unit label {
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+
+.main-form-item-radio-list-unit label:before {
+    content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    background: url("../../images/svg/Uncheck-radio.svg") 0 0 no-repeat;
+
+}
+
+.main-form-item-radio-list-unit input[type=radio]:checked + label:before {
+    background: url("../../images/svg/Check-radio.svg") 0 0 no-repeat;
+}
+
+.main-form-item-radio-list-unit  label:hover:before{
+    filter: brightness(100%);
+    text-decoration-line: underline;
+}
+
+.main-form-item-radio-list-unit-label:hover, .main-form-item-list-unit-label:hover {
+    text-decoration-line: underline;
+}
+
+.main-form-item-list-unit {
+    cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+
+.main-form-item-list-unit input[type=checkbox] {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.main-form-item-list-unit label {
+    display: inline-block;
+	position: relative;
+	padding: 0 0 0 35px;
+	line-height: 22px;
+    cursor: pointer;
+}
+
+.main-form-item-list-unit label:before {
+    content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: background 0.3s ease;
+	background: url("../../images/svg/Uncheck-box.svg") 0 0 no-repeat;
+}
+
+.main-form-item-list-unit input[type=checkbox]:checked + label:before  {
+    background: url("../../images/svg/Check-box.svg") 0 0 no-repeat;
+}
+
+.main-form-item-range {
+     -webkit-appearance: none;
+    border-radius:2px;
+    width:234px;
+    height:4px;
+    outline : none;
+    background: #000000;
+    background:-webkit-linear-gradient(left , #c29974 0%, #c29974 25%, #000000 25%, #000000 100%);
+}
+
+.main-form-item-range::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background: url("../../images/svg/RangeRound.svg");
+    width: 24px;
+    height: 24px;
+    cursor:pointer;
+    transition:.1s;
+}
+
+.main-form-item-range::-webkit-slider-thumb:hover {
+    opacity: 0.9;
 }
 
 .main-form-item-range-numbers {
@@ -144,10 +269,6 @@
     flex-direction: row;
 }
 
-.main-form-item-radio-buttons-unit-label {
-    background: #FFFFFF;
-}
-
 .main-form-item-button {
     padding: 9px 22px;
     display: flex;
@@ -162,6 +283,19 @@
     font-size: 15px;
     line-height: 22px;
     background: #000000;
+    border: none;
     color: #FFFFFF;
     margin: 10px 0px;
+}
+
+.main-form-item-button:hover {
+    background: #C29974;
+}
+
+.main-form-item-button:active {
+    background: #CFAF91;
+}
+
+.main-form-item-button:disabled {
+    background: #C1C1C1;
 }
