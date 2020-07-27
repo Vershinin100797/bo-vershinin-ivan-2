@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Project</title>
+    <link rel="stylesheet" href="styles/pages/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="images/Union.png" alt="DLK-logo" class="header-logo">
-        <nav class="header-navigation">
-            <ul class="header-navigation-block">
-                <li class="header-navigation-item"><a href="blog.html">Blog</a></li>
-                <li class="header-navigation-item"><a href="catalog.html">Catalog</a></li>
-                <li class="header-navigation-item"><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-        <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
-        <a href="contact-us.html" class="header-link">Contact Us</a>
+    <header class="grid">
+        <div class="header">
+            <div class="header-navigation">
+                <a class="header-logo-link" href="index.html">
+                    <img src="images/Union.png" alt="DLK-logo" class="header-logo">
+                </a>
+                <nav>
+                    <ul class="header-navigation-block">
+                        <li class="header-navigation-item"><a href="blog.html">Blog</a></li>
+                        <li class="header-navigation-item"><a href="catalog.html">Catalog</a></li>
+                        <li class="header-navigation-item"><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="contact-us.html" class="header-link">
+                <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
+                Contact Us
+            </a>
+        </div>
     </header>
-    <main class="main">
+    <main class="main grid">
         <h1 class="main-headline">Blog</h1>
         <span class="main-breadcrumbs">
             <span class="main-breadcrumbs-item">Home</span>
-            <span class="main-breadcrumbs-pointer">></span> <!--Временно обозначил стрелку с помощью >. Позднее заменю на свг элемент-->
+            <span class="main-breadcrumbs-pointer"></span>
             <span class="main-breadcrumbs-item">Blog</span>
         </span>
         <section class="main-blog">
@@ -96,74 +109,88 @@
                 </span>
             </div>
             <span class="main-pagination">
-                <a href="#" class="main-pagination-left-arrow"><</a> <!--Временно обозначил стрелку с помощью <. Позднее заменю на свг элемент-->
-                <a href="#" class="main-pagination-item">1</a>
-                <a href="#" class="main-pagination-item">2</a>
-                <a href="#" class="main-pagination-item">3</a>
-                <a href="#" class="main-pagination-item">4</a>
-                <a href="#" class="main-right-arrow">></a> <!--Временно обозначил стрелку с помощью >. Позднее заменю на свг элемент-->
+                <a href="#" class="main-pagination-left-arrow"></a>
+                <span class="main-pagination-list">
+                    <a href="#" class="main-pagination-item">1</a>
+                    <a href="#" class="main-pagination-item">2</a>
+                    <a href="#" class="main-pagination-item">3</a>
+                    <a href="#" class="main-pagination-item">4</a>
+                </span>
+                <a href="#" class="main-pagination-right-arrow"></a>
             </span>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-main-block">
-            <div class="footer-main-block-navigation">
-                <span class="footer-main-block-navigation-headline">Navigation</span>
+        <div class="grid">
+            <div class="footer-main-block">
+                <div class="footer-main-block-navigation">
+                    <span class="footer-main-block-navigation-headline">Navigation</span>
                     <span class="footer-main-block-navigation-list">
-                        <a href="#" class="footer-main-block-navigation-item">About Us</a>
-                        <a href="#" class="footer-main-block-navigation-item">Blog</a>
-                        <a href="#" class="footer-main-block-navigation-item">Design Services</a>
-                        <a href="#" class="footer-main-block-navigation-item">Featured On</a>
-                        <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
-                        <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
-                    </span>
-            </div>
-            <div class="footer-main-block-customer-information">
-                <span class="footer-main-block-customer-information-headline">Customer Information</span>
+                            <a href="#" class="footer-main-block-navigation-item">About Us</a>
+                            <a href="#" class="footer-main-block-navigation-item">Blog</a>
+                            <a href="#" class="footer-main-block-navigation-item">Design Services</a>
+                            <a href="#" class="footer-main-block-navigation-item">Featured On</a>
+                            <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
+                            <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
+                        </span>
+                </div>
+                <div class="footer-main-block-customer-information">
+                    <span class="footer-main-block-customer-information-headline">Customer Information</span>
                     <span class="footer-main-block-customer-information-list">
-                        <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Search</a>
-                    </span>
-            </div>
-            <div class="footer-main-block-connect">
-                <span class="footer-main-block-connect-headline">Connect</span>
-                <form action="#" class="footer-main-block-connect-form">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email" class="footer-main-block-connect-input"
-                           id="email" name="Email">
-                    <button class="footer-main-block-connect-button">Join</button>
+                            <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Search</a>
+                        </span>
+                </div>
+                <div class="footer-main-block-connect">
+                    <span class="footer-main-block-connect-headline">Connect</span>
+                    <form action="#" class="footer-main-block-connect-form">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email" class="footer-main-block-connect-input"
+                               id="email" name="Email">
+                        <button class="footer-main-block-connect-button">Join</button>
+                    </form>
                     <div class="footer-main-block-connect-links">
                         <a href="https://www.facebook.com/" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="facebook" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Facebook.svg" alt="facebook" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://twitter.com/explore" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="twitter" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Twitter.svg" alt="twitter" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://pinterest.com" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="pinterest" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Pinterest.svg" alt="pinterest" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://www.instagram.com/" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="instagram" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Instagram.svg" alt="instagram" class="footer-main-block-connect-links-img">
                         </a>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="footer-additional-block">
-            <div class="footer-additional-block-rating">
-                <span class="footer-additional-block-rating-headline">Company Rating</span>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
+            <div class="footer-additional-block">
+                <div class="footer-additional-block-rating">
+                    <span class="footer-additional-block-rating-headline">Company Rating</span>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                </div>
+                <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+                <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
             </div>
-            <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-            <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
         </div>
     </footer>
 </body>

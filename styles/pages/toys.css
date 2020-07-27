@@ -1,0 +1,167 @@
+@import "../blocks/body.css";
+@import "../blocks/header.css";
+@import "../blocks/footer.css";
+@import "../blocks/main.css";
+@import "../blocks/grid.css";
+@import "../blocks/breadcrumbs.css";
+@import "../blocks/pagination.css";
+
+.main-headline {
+    margin-bottom: 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+
+    text-transform: uppercase;
+
+    color: #1E0606;
+}
+
+.main-products-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+.main-products-list-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    margin-bottom: 50px;
+}
+
+.main-pagination {
+    margin-bottom: 20px;
+}
+
+.main-products-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.main-products-list-item-img {
+    width: 380px;
+    height: 385px;
+}
+
+.main-products-list-item-name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #1E0606;
+
+    margin-bottom: 15px;
+}
+
+.main-products-list-item-price {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #1E0606;
+}
+
+.main-form {
+    background: rgba(125, 151, 218, 0.2);
+    height: 254px;
+    display: flex;
+    align-items: center;
+}
+
+.main-form-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form-item-label {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1E0606;
+}
+
+.main-form-item-checkbox-list, .main-form-item-radio-list, .main-form-item-radio-buttons-list {
+    padding: 0px;
+}
+
+.main-form-item-list-unit, .main-form-item-radio-buttons-unit {
+    list-style-type: none;
+}
+
+.main-form-item-range-numbers {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1E0606;
+}
+
+.main-form-item-checkbox-list, .main-form-item-radio-list, .main-form-item-radio-buttons-list {
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1E0606;
+}
+
+.main-form-item-radio-buttons-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-form-item-radio-buttons-unit-label {
+    background: #FFFFFF;
+}
+
+.main-form-item-button {
+    padding: 9px 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 95px;
+    height: 40px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    background: #000000;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
