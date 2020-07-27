@@ -220,7 +220,7 @@
 }
 
 .main-form-item-range {
-     -webkit-appearance: none;
+    -webkit-appearance: none;
     border-radius:2px;
     width:234px;
     height:4px;
@@ -230,7 +230,7 @@
 }
 
 .main-form-item-range::-webkit-slider-thumb {
-     -webkit-appearance: none;
+    -webkit-appearance: none;
     background: url("../../images/svg/RangeRound.svg");
     width: 24px;
     height: 24px;
