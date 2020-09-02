@@ -64,6 +64,7 @@
 }
 
 .main-category-gallery-preview-item-text {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -59,6 +59,10 @@
 
 .main-blog-item-headline {
     margin-bottom: 15px;
+}
+
+.main-blog-item-headline-text {
+    margin: 0;
 
     font-family: Montserrat;
     text-decoration: none;
