@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project</title>
+    <title>DLK</title>
     <link rel="stylesheet" href="styles/pages/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
@@ -13,9 +13,7 @@
     <header class="grid">
         <div class="header">
             <div class="header-navigation">
-                <a class="header-logo-link" href="index.html">
-                    <img src="images/Union.png" alt="DLK-logo" class="header-logo">
-                </a>
+                <img src="images/Union.png" alt="DLK-logo" class="header-logo" style="pointer-events: none;">
                 <nav>
                     <ul class="header-navigation-block">
                         <li class="header-navigation-item"><a href="blog.html">Blog</a></li>
@@ -24,10 +22,12 @@
                     </ul>
                 </nav>
             </div>
-            <a href="contact-us.html" class="header-link">
+            <div class="header-link-block">
                 <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
-                Contact Us
-            </a>
+                <a href="contact-us.html" class="header-link">
+                    Contact Us
+                </a>
+            </div>
         </div>
     </header>
     <main class="main grid">
@@ -35,15 +35,17 @@
             <div class="preview-container">
                 <div class="preview-container-paginator">
                     <span class="preview-container-number">01</span>
-                    <a href="#" class="preview-container-slide"></a>
-                    <a href="#" class="preview-container-slide"></a>
-                    <a href="#" class="preview-container-slide"></a>
-                    <a href="#" class="preview-container-slide"></a>
+                    <ul class="preview-container-slider">
+                        <li class="preview-container-slide"></li>
+                        <li class="preview-container-slide"></li>
+                        <li class="preview-container-slide"></li>
+                        <li class="preview-container-slide"></li>
+                    </ul>
                 </div>
                 <div class="preview-container-description">
                     <h1 class="preview-container-headline">THE OOH NOO COLLECTION</h1>
                     <span class="preview-container-annotation">Designed in Slovenia</span>
-                    <a href="#" class="preview-container-link" id="explore-now">EXPLORE NOW</a>
+                    <button class="preview-container-link" id="explore-now">EXPLORE NOW</button>
                     <img src="images/prev-image.png" alt="prev-img" class="preview-container-img">
                 </div>
             </div>
@@ -73,12 +75,12 @@
                     </a>
                 </div>
                 <div class="main-category-gallery-pagination">
-                    <a href="#" class="main-category-gallery-pagination-button-left">
-                        <span class="button-left"></span>
-                    </a>
-                    <a href="#" class="main-category-gallery-pagination-button-right">
-                        <span class="button-right"></span>
-                    </a>
+                    <button class="main-category-gallery-pagination-button-left">
+                        <img src="images/svg/MainPaginationLeft.svg" alt="left-button" class="button-left">
+                    </button>
+                    <button class="main-category-gallery-pagination-button-right">
+                        <img src="images/svg/MainPaginationRight.svg" alt="right-button" class="button-right">
+                    </button>
                     <span class="main-category-gallery-pagination-text">
                         Modern finds for the modern home. Curated goods by unique designers around the world from
                         fashion to furniture for kids and adults.
@@ -104,11 +106,21 @@
                 <a href="#" class="main-product-unit-link">LEARN MORE</a>
             </div>
         </section>
-        <div class="main-sponsors-unit">
-            <img src="images/mail-ru.png" alt="mail-ru" class="main-sponsors-logo">
-            <img src="images/apple.png" alt="apple" class="main-sponsors-logo">
-            <img src="images/eltex.png" alt="eltex" class="main-sponsors-logo">
-            <img src="images/owox.png" alt="owox" class="main-sponsors-logo">
+        <div>
+            <ul class="main-sponsors-unit">
+                <li>
+                    <img src="images/mail-ru.png" alt="mail-ru" class="main-sponsors-logo">
+                </li>
+                <li>
+                    <img src="images/apple.png" alt="apple" class="main-sponsors-logo">
+                </li>
+                <li>
+                    <img src="images/eltex.png" alt="eltex" class="main-sponsors-logo">
+                </li>
+                <li>
+                    <img src="images/owox.png" alt="owox" class="main-sponsors-logo">
+                </li>
+            </ul>
         </div>
         <div class="main-addition-unit">
             <article class="main-addition-about-us">
@@ -135,25 +147,25 @@
             <div class="footer-main-block">
                 <div class="footer-main-block-navigation">
                     <span class="footer-main-block-navigation-headline">Navigation</span>
-                    <span class="footer-main-block-navigation-list">
+                    <div class="footer-main-block-navigation-list">
                             <a href="#" class="footer-main-block-navigation-item">About Us</a>
                             <a href="#" class="footer-main-block-navigation-item">Blog</a>
                             <a href="#" class="footer-main-block-navigation-item">Design Services</a>
                             <a href="#" class="footer-main-block-navigation-item">Featured On</a>
                             <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
                             <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
-                        </span>
+                    </div>
                 </div>
                 <div class="footer-main-block-customer-information">
                     <span class="footer-main-block-customer-information-headline">Customer Information</span>
-                    <span class="footer-main-block-customer-information-list">
+                    <div class="footer-main-block-customer-information-list">
                             <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
                             <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
                             <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
                             <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
                             <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
                             <a href="#" class="footer-main-block-customer-information-item">Search</a>
-                        </span>
+                    </div>
                 </div>
                 <div class="footer-main-block-connect">
                     <span class="footer-main-block-connect-headline">Connect</span>
@@ -182,24 +194,16 @@
             <div class="footer-additional-block">
                 <div class="footer-additional-block-rating">
                     <span class="footer-additional-block-rating-headline">Company Rating</span>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
+                    <ul class="footer-additional-block-rating">
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                    </ul>
                 </div>
                 <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-                <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
+                <span class="footer-additional-block-developers"><a href="https://directline.digital/">Web Design</a> — Direct Line Development</span>
             </div>
         </div>
     </footer>
@@ -223,8 +227,8 @@
                     <textarea name="Message" id="message-area" cols="30" rows="10" class="user-field-text-area"></textarea>
                 </span>
                 <span class="user-field-check">
-                    <label class="user-field-check-label">
-                        <input type="checkbox" name="consent" class="modal-field-checkbox">
+                    <input type="checkbox" name="consent" id="consent" class="modal-field-checkbox">
+                    <label for="consent" class="user-field-check-label">
                         By clicking on the button, you consent to the processing of your personal data
                     </label>
                 </span>

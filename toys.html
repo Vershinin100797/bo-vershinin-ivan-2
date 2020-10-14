@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project</title>
+    <title>Toys</title>
     <link rel="stylesheet" href="styles/pages/toys.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
@@ -24,10 +24,12 @@
                     </ul>
                 </nav>
             </div>
-            <a href="contact-us.html" class="header-link">
+            <div class="header-link-block">
                 <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
-                Contact Us
-            </a>
+                <a href="contact-us.html" class="header-link">
+                    Contact Us
+                </a>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -84,13 +86,13 @@
                     <label class="main-form-item-label">Delivery</label>
                     <ul class="main-form-item-radio-list">
                         <li class="main-form-item-radio-list-unit">
-                            <input name="Free-shipping" type="radio" id="Free_shipping" class="main-form-item-list-unit-radio">
+                            <input name="Delivery" type="radio" id="Free_shipping" checked class="main-form-item-list-unit-radio">
                             <label for="Free_shipping" class="main-form-item-radio-list-unit-label">
                                 Free shipping
                             </label>
                         </li>
                         <li class="main-form-item-radio-list-unit">
-                            <input name="Fast-shipping" type="radio" id="Fast_shipping" class="main-form-item-list-unit-radio">
+                            <input name="Delivery" type="radio" id="Fast_shipping" class="main-form-item-list-unit-radio">
                             <label for="Fast_shipping" class="main-form-item-radio-list-unit-label">
                                 Fast shipping
                             </label>
@@ -101,19 +103,19 @@
                     <label class="main-form-item-label">Amount</label>
                     <ul class="main-form-item-radio-buttons-list">
                         <li class="main-form-item-radio-buttons-unit">
-                            <input name="0-5" type="radio" id="0-5" class="main-form-item-radio-buttons-unit-input">
+                            <input name="Amount" type="radio" id="0-5" class="main-form-item-radio-buttons-unit-input">
                             <label for="0-5" class="main-form-item-radio-buttons-unit-label">
                                 0-5
                             </label>
                         </li>
                         <li class="main-form-item-radio-buttons-unit">
-                            <input name="10-20" type="radio" id="10-20" class="main-form-item-radio-buttons-unit-input">
+                            <input name="Amount" type="radio" id="10-20" checked class="main-form-item-radio-buttons-unit-input">
                             <label for="10-20" class="main-form-item-radio-buttons-unit-label">
                                 10-20
                             </label>
                         </li>
                         <li class="main-form-item-radio-buttons-unit">
-                            <input name="20-50" type="radio" id="20-50" class="main-form-item-radio-buttons-unit-input">
+                            <input name="Amount" type="radio" id="20-50" class="main-form-item-radio-buttons-unit-input">
                             <label for="20-50" class="main-form-item-radio-buttons-unit-label">
                                 20-50
                             </label>
@@ -197,25 +199,25 @@
             <div class="footer-main-block">
                 <div class="footer-main-block-navigation">
                     <span class="footer-main-block-navigation-headline">Navigation</span>
-                    <span class="footer-main-block-navigation-list">
+                    <div class="footer-main-block-navigation-list">
                             <a href="#" class="footer-main-block-navigation-item">About Us</a>
                             <a href="#" class="footer-main-block-navigation-item">Blog</a>
                             <a href="#" class="footer-main-block-navigation-item">Design Services</a>
                             <a href="#" class="footer-main-block-navigation-item">Featured On</a>
                             <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
                             <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
-                        </span>
+                    </div>
                 </div>
                 <div class="footer-main-block-customer-information">
                     <span class="footer-main-block-customer-information-headline">Customer Information</span>
-                    <span class="footer-main-block-customer-information-list">
+                    <div class="footer-main-block-customer-information-list">
                             <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
                             <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
                             <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
                             <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
                             <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
                             <a href="#" class="footer-main-block-customer-information-item">Search</a>
-                        </span>
+                    </div>
                 </div>
                 <div class="footer-main-block-connect">
                     <span class="footer-main-block-connect-headline">Connect</span>
@@ -244,24 +246,16 @@
             <div class="footer-additional-block">
                 <div class="footer-additional-block-rating">
                     <span class="footer-additional-block-rating-headline">Company Rating</span>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
-                    <a href="#" class="footer-additional-block-rating-item">
-                        <img src="images/svg/Star.svg" alt="star">
-                    </a>
+                    <ul class="footer-additional-block-rating">
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                        <li class="footer-additional-block-rating-item"></li>
+                    </ul>
                 </div>
                 <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-                <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
+                <span class="footer-additional-block-developers"><a href="https://directline.digital/">Web Design</a> — Direct Line Development</span>
             </div>
         </div>
     </footer>

@@ -65,13 +65,13 @@
 
     background: #666666;
     color: #ffffff;
+
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
 }
 
 .footer-main-block-connect-input::placeholder {
-    padding-left: 15px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -130,8 +130,10 @@
     text-decoration: none;
 }
 
-.footer-additional-block-developers {
+.footer-additional-block-developers, .footer-additional-block-developers a  {
+    font-family: Open Sans;
     color: #A2A2A2;
+    text-decoration: none;
 }
 
 .footer-main-block-navigation-item:hover, .footer-main-block-customer-information-item:hover {
@@ -148,21 +150,20 @@
     opacity: 0.5;
 }
 
-.footer-main-block-connect-input:active {
+.footer-main-block-connect-input:focus {
+    padding: 10px;
     background: #666666;
     border: 1px solid #FFFDFD;
-    box-sizing: border-box;
+    outline: none;
 }
 
-.footer-additional-block-developers:hover {
-    font-family: Open Sans;
+.footer-additional-block-developers a:hover {
+    box-sizing: border-box;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
 
-    display: flex;
-    align-items: center;
     text-decoration-line: underline;
     cursor: pointer;
 
@@ -172,6 +173,31 @@
 .footer-additional-block-rating-headline:hover {
     cursor: pointer;
     color: #836E5B;
+}
+
+.footer-additional-block-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-additional-block-rating-item {
+    background: url("../../images/svg/Star.svg") 0 0 no-repeat;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+}
+
+.footer-additional-block-rating-item:hover {
+    opacity: 0.7;
+}
+
+.footer-additional-block-rating-item:active{
+   background: url("../../images/svg/BrownStar.svg") 0 0 no-repeat;
 }
 
 .footer-main-block-connect-links-img:hover {

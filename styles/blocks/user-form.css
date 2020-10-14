@@ -37,6 +37,8 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    padding: 10px;
+    outline: none;
 }
 
 .user-field-input {
@@ -56,9 +58,12 @@
 
     height: 150px;
 
+    padding: 10px;
     margin-bottom: 20px;
 
     resize: none;
+
+    outline: none;
 }
 
 .user-field-check {
@@ -73,10 +78,6 @@
     line-height: 16px;
 
     color: #1E0606;
-}
-
-.modal-field-checkbox {
-
 }
 
 .user-submit-button {

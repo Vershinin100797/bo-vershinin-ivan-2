@@ -81,6 +81,10 @@
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
+.main-category-gallery-preview-item-text:hover {
+    text-decoration: underline;
+}
+
 .main-description {
     margin: 50px 410px 0 200px;
     max-width: 680px;

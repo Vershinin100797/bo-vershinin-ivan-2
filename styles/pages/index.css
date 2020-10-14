@@ -51,6 +51,12 @@
     background: #D6CAC2;
 }
 
+.preview-container-slider {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 .preview-container-description {
     padding-top: 89px;
     padding-left: 44px;
@@ -82,14 +88,17 @@
 }
 
 .preview-container-link {
-    padding: 9px 22px;
+    padding: 5px 19px;
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
 
-    width: 105px;
-    height: 28px;
+    cursor: pointer;
+    border: none;
+
+    width: 151px;
+    height: 50px;
 
     text-decoration: none;
     font-style: normal;
@@ -109,6 +118,7 @@
 
 .preview-container-link:active, .main-product-unit-link:active, .main-addition-about-us-link:active {
     background: #CFAF91;
+    outline: none;
 }
 
 .preview-container-link:disabled, .main-product-unit-link:disabled, .main-addition-about-us-link:disabled {
@@ -209,6 +219,17 @@
     height: 37px;
     background: rgba(112, 187, 220, 0.2);
     text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-category-gallery-pagination-button-left:hover, .main-category-gallery-pagination-button-right:hover {
+    background: aliceblue;
+}
+
+.main-category-gallery-pagination-button-left:active, .main-category-gallery-pagination-button-right:active {
+    background: cadetblue;
 }
 
 .main-category-gallery-pagination-button-left {
@@ -216,22 +237,7 @@
 }
 
 .button-left, .button-right {
-    position: absolute;
-    top: 9px;
-    left: 15px;
-    width: 16px;
-    height: 16px;
-    border-top: 4px solid #1E0606;
-    border-right: 4px solid #1E0606;
-}
-
-.button-left {
-    transform: rotate(-135deg);
-}
-
-.button-right {
-    left: 5px;
-    transform: rotate(45deg);
+    padding-top: 4px;
 }
 
 .main-category-gallery-pagination-text {
@@ -330,10 +336,12 @@
 }
 
 .main-sponsors-unit {
+    padding: 0;
     margin: 90px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .main-sponsors-logo {
@@ -469,10 +477,12 @@
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .preview-container-slide:hover {
     background: #725F5B;
+    cursor: pointer;
 }
 
 .main-category-gallery-preview-item-text:hover {
